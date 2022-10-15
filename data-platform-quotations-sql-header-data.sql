@@ -23,7 +23,7 @@ CREATE TABLE `data_platform_quotations_header_data`
     `BindingPeriodValidityEndDate`    varchar(80) DEFAULT NULL,
     `OrderProbabilityInPercent`       varchar(3) DEFAULT NULL, -- 名称変更
     `ExpectedOrderNetAmount`          varchar(13) DEFAULT NULL,
-    `IncotermsClassification`         varchar(3) DEFAULT NULL,
+    `Incoterms`                       varchar(3) DEFAULT NULL, -- 名称変更
     `PaymentTerms`                    varchar(4) DEFAULT NULL,
     `PaymentMethod`                   varchar(1) DEFAULT NULL,
     `BPTaxClassification1`            varchar(1) DEFAULT NULL,
