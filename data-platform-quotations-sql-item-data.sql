@@ -22,7 +22,7 @@ CREATE TABLE `data_platform_quotations_item_data`
   `IssuingPlantStorageLocation`    varchar(4) DEFAULT NULL,  -- 新規追加
   `ReceivingPlant`                 varchar(4) DEFAULT NULL,  -- 新規追加
   `ReceivingPlantStorageLocation`  varchar(4) DEFAULT NULL,  -- 新規追加
-  `Incoterms`       　　　　　　　　　varchar(3) DEFAULT NULL,  -- 名称変更
+  `Incoterms`                      varchar(3) DEFAULT NULL,  -- 名称変更
   `PaymentTerms`                   varchar(4) DEFAULT NULL,  -- 名称変更
   `ProductTaxClassification1`      varchar(1) DEFAULT NULL,
   `Project`                        varchar(24) DEFAULT NULL, -- 新規追加
