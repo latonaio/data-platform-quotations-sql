@@ -14,7 +14,12 @@ CREATE TABLE `data_platform_quotations_header_data`
     `CreationDate`                    varchar(80) DEFAULT NULL,
     `LastChangeDate`                  varchar(80) DEFAULT NULL,
     `SalesExternalDocumentID`         varchar(40) DEFAULT NULL,  -- 新規追加
-    `PurchaseExternalDocumentID`      varchar(40) DEFAULT NULL,  -- 新規追加        
+    `PurchaseExternalDocumentID`      varchar(40) DEFAULT NULL,  -- 新規追加
+    `ContractType`                    varchar(4) DEFAULT NULL,   -- 新規追加
+    `ValidityStartDate`               varchar(80) DEFAULT NULL,  -- 新規追加
+    `ValidityEndDate`                 varchar(80) DEFAULT NULL,  -- 新規追加
+    `InvoiceScheduleStartDate`        varchar(80) DEFAULT NULL,  -- 新規追加
+    `InvoiceScheduleEndDate`          varchar(80) DEFAULT NULL,  -- 新規追加
     `TotalNetAmount`                  varchar(13) DEFAULT NULL,
     `TransactionCurrency`             varchar(5) DEFAULT NULL,
     `PricingDate`                     varchar(80) DEFAULT NULL,
