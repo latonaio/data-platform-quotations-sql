@@ -14,6 +14,7 @@ CREATE TABLE `data_platform_quotations_item_data`
   `ItemNetWeight`                  varchar(17) DEFAULT NULL,
   `ItemWeightUnit`                 varchar(3) DEFAULT NULL,
   `TransactionCurrency`            varchar(5) DEFAULT NULL,
+  `BussinessParnterCurrency`       varchar(5) DEFAULT NULL,  -- 新規追加
   `NetAmount`                      varchar(13) DEFAULT NULL,
   `ProductGroup`                   varchar(9) DEFAULT NULL,
   `ProductPricingGroup`            varchar(2) DEFAULT NULL,

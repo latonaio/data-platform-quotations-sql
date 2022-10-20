@@ -22,6 +22,7 @@ CREATE TABLE `data_platform_quotations_header_data`
     `InvoiceScheduleEndDate`          varchar(80) DEFAULT NULL,  -- 新規追加
     `TotalNetAmount`                  varchar(13) DEFAULT NULL,
     `TransactionCurrency`             varchar(5) DEFAULT NULL,
+    `BussinessParnterCurrency`        varchar(5) DEFAULT NULL,  -- 新規追加
     `PricingDate`                     varchar(80) DEFAULT NULL,
     `RequestedDeliveryDate`           varchar(80) DEFAULT NULL,
     `BindingPeriodValidityStartDate`  varchar(80) DEFAULT NULL,
