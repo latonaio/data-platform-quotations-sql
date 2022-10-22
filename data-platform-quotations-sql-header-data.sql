@@ -11,6 +11,7 @@ CREATE TABLE `data_platform_quotations_header_data`
     `District`                        varchar(6) DEFAULT NULL,
     `Customer`                        int(10) DEFAULT NULL,
     `Supplier`                        int(10) DEFAULT NULL,
+    `Language`                        varchar(2) DEFAULT NULL,   -- 新規追加
     `CreationDate`                    varchar(80) DEFAULT NULL,
     `LastChangeDate`                  varchar(80) DEFAULT NULL,
     `SalesExternalDocumentID`         varchar(40) DEFAULT NULL,  -- 新規追加
