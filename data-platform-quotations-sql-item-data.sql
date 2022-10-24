@@ -1,21 +1,21 @@
 CREATE TABLE `data_platform_quotations_item_data`
 (
-  `BusinessPartner`                int(10) NOT NULL,          -- 新規追加
-  `Quotation`                      int(10) NOT NULL,          -- 名称変更
+--`BusinessPartner`                int(10) NOT NULL,          -- 新規追加
+  `Quotation`                      int(16) NOT NULL,          -- 名称変更
   `QuotationItem`                  int(6) NOT NULL,           -- 名称変更
   `QuotationItemCategory`          varchar(4) DEFAULT NULL,   -- 名称変更
   `QuotationItemText`              varchar(100) DEFAULT NULL, -- 名称変更
   `Product`                        varchar(40) DEFAULT NULL,  -- 名称変更
-  `ProductByCustomer`              varchar(35) DEFAULT NULL,  -- 名称変更
-  `QuotationQuantity`              varchar(17) DEFAULT NULL,  -- 名称変更
+--`ProductByCustomer`              varchar(35) DEFAULT NULL,  -- 名称変更
+  `QuotationQuantity`              float(17) DEFAULT NULL,  -- 名称変更
   `QuotationQuantityUnit`          varchar(3) DEFAULT NULL,   -- 名称変更
-  `ItemOrderProbabilityInPercent`  varchar(3) DEFAULT NULL,
-  `ItemGrossWeight`                varchar(17) DEFAULT NULL,
-  `ItemNetWeight`                  varchar(17) DEFAULT NULL,
+  `ItemOrderProbabilityInPercent`  float(6) DEFAULT NULL,
+  `ItemGrossWeight`                float(17) DEFAULT NULL,
+  `ItemNetWeight`                  float(17) DEFAULT NULL,
   `ItemWeightUnit`                 varchar(3) DEFAULT NULL,
   `TransactionCurrency`            varchar(5) DEFAULT NULL,
   `BussinessParnterCurrency`       varchar(5) DEFAULT NULL,  -- 新規追加
-  `NetAmount`                      varchar(13) DEFAULT NULL,
+  `NetAmount`                      float(13) DEFAULT NULL,
   `ProductGroup`                   varchar(9) DEFAULT NULL,
   `ProductPricingGroup`            varchar(2) DEFAULT NULL,
   `Batch`                          varchar(10) DEFAULT NULL,
