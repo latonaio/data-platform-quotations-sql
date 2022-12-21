@@ -16,7 +16,7 @@ data-platform-quotations-sql には、sqlの設定ファイルとして、以下
 * data-platform-quotations-sql-header-partner-data.sql（データ連携基盤 見積 - ヘッダ取引先データ）
 * data-platform-quotations-sql-header-partner-contact-data.sql（データ連携基盤 見積 - ヘッダ取引先コンタクトデータ）
 * data-platform-quotations-sql-header-partner-plant-data.sql（データ連携基盤 見積 - ヘッダ取引先プラントデータ）
-* data-platform-quotations-sql-header-pdf-data.sql（データ連携基盤 見積 - ヘッダPDFデータ）
+* data-platform-quotations-sql-header-doc-data.sql（データ連携基盤 見積 - ヘッダ文書データ）
 * data-platform-quotations-sql-item-data.sql（データ連携基盤 見積 - 明細データ）
 * data-platform-quotations-sql-item-partner-data.sql（データ連携基盤 見積 - 明細取引先データ）
 * data-platform-quotations-sql-item-pricing-element-data.sql（データ連携基盤 見積 - 明細価格決定要素データ）
