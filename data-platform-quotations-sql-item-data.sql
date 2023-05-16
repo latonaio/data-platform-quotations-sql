@@ -25,12 +25,12 @@ CREATE TABLE `data_platform_quotations_item_data`
   `ReceivingPlantStorageLocation`  varchar(4) DEFAULT NULL,  -- 新規追加
   `Incoterms`                      varchar(3) DEFAULT NULL,  -- 名称変更
   `PaymentTerms`                   varchar(4) DEFAULT NULL,  -- 名称変更
-  `ProductTaxClassification1`      varchar(1) DEFAULT NULL,
+  `ProductTaxClassification1`       varchar(1) DEFAULT NULL,
   `Project`                        varchar(24) DEFAULT NULL, -- 新規追加
   `ProfitCenter`                   varchar(10) DEFAULT NULL,
   `ReferenceInquiry`               int(10) DEFAULT NULL,     -- 名称変更
   `ReferenceInquiryItem`           int(6) DEFAULT NULL,      -- 名称変更
-  PRIMARY KEY (`BusinessPartner`, `Quotation`, `QuotationItem`),
-  CONSTRAINT `DataPlatformQuotationsItemData_fk` FOREIGN KEY (`BusinessPartner`, `Quotation`) REFERENCES `data_platform_quotations_header_data` (`BusinessPartner`, `Quotation`)
+  PRIMARY KEY (`Quotation`, `QuotationItem`),
+  CONSTRAINT `DataPlatformQuotationsItemData_fk` FOREIGN KEY (`Quotation`) REFERENCES `data_platform_quotations_header_data` (`Quotation`)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4;

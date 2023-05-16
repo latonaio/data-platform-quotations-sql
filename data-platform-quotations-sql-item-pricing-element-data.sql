@@ -14,7 +14,7 @@ CREATE TABLE `data_platform_quotations_item_pricing_element_data`
   `TaxCode`                        varchar(2) DEFAULT NULL,
   `TransactionCurrency`            varchar(5) DEFAULT NULL,
   `ConditionIsManuallyChanged`     tinyint(1) DEFAULT NULL,
-    PRIMARY KEY (`BusinessPartner`, `Quotation`, `QuotationItem`, `PricingProcedureStep`, `PricingProcedureCounter`),
-    CONSTRAINT `DataPlatformOrdersItemPricingElementData_fk` FOREIGN KEY (`BusinessPartner`, `Quotation`, `QuotationItem`) REFERENCES `data_platform_quotations_item_data` (`BusinessPartner`, `Quotation`, `QuotationItem`)
+    PRIMARY KEY (`Quotation`, `QuotationItem`, `PricingProcedureStep`, `PricingProcedureCounter`),
+    CONSTRAINT `DataPlatformOrdersItemPricingElementData_fk` FOREIGN KEY (`Quotation`, `QuotationItem`) REFERENCES `data_platform_quotations_item_data` (`Quotation`, `QuotationItem`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

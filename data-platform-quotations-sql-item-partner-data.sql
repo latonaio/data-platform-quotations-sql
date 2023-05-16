@@ -8,7 +8,7 @@ CREATE TABLE `data_platform_quotations_item_partner_data`
   `BusinessPartnerFullName`             varchar(200) DEFAULT NULL,  -- 新規追加
   `BusinessPartnerName`                 varchar(100) DEFAULT NULL,  -- 新規追加
   `AddressID`                           int(10) DEFAULT NULL,       -- 新規追加
-    PRIMARY KEY (`BusinessPartner`, `Quotation`, `QuotationItem`, `PartnerFunction`),
-    CONSTRAINT `DataPlatformQuotationsItemPartnerData_fk` FOREIGN KEY (`BusinessPartner`, `Quotation`, `QuotationItem`) REFERENCES `data_platform_quotations_item_data` (`BusinessPartner`, `Quotation`, `QuotationItem`)
+    PRIMARY KEY (`Quotation`, `QuotationItem`, `PartnerFunction`),
+    CONSTRAINT `DataPlatformQuotationsItemPartnerData_fk` FOREIGN KEY (`Quotation`, `QuotationItem`) REFERENCES `data_platform_quotations_item_data` (`Quotation`, `QuotationItem`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
